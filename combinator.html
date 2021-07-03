@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main-div h1{
+            background-color: green;
+        }
+        .main-div > h1{
+            background-color: red;
+        }
+
+        h1 + h2{
+            background-color: orange;
+
+        }
+
+        h1~h2{
+            background-color: orchid;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1>This is heading</h1>
+        <h2>This is small heading</h2>
+        <div>
+            <h1>This is heading inside heading</h1>
+            <h2>This is second heading inside heading</h2>
+        </div>
+        <h2>This is outside of inside heading</h2>
+    </div>
+    <div class="second">
+        <h1>This is second heading</h1>
+    </div>
+</body>
+</html>
+
+
+<!-- Syntax of decendant selector
+
+.classname attribute{
+    background-color:none;
+}
+
+syntax of child selector
+
+.classname >attribute{
+
+}
+
+syntax of adjacent sibling selector
+
+h1+h2{
+    behind h1 sibling only
+}
+
+syntax of general sibling
+h1~h2{
+    general sibling all
+}
+
+-->

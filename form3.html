@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+
+           color:rgb(41,87,132);
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body style="background-color:rgb(106,200,254);">
+    <form>
+        <br/><br/>
+        <label style="width: 90px; float: left;" for="Fname">Firstname:</label>
+        <input type="text" id="Fname" name="Fname" required autofocus/>
+
+        <br/><br/>
+
+        <label style="width: 100px; float: left;" for="Mname">Middlename:</label>
+        <input type="text" id="Mname" name="Mname"/>
+
+        <br/><br/>
+
+        <label style="width: 95px; float: left;"  for="Lname">Lastname:</label>
+        <input type="text" id="Lname" name="Lname" required/>
+
+        <br/><br/>
+
+        <label >Course:</label>
+        <select id="course" name="course"  required>
+            <option value="">Course</option>
+            <option value="Effective Communication Skills 2">EFC2</option>
+            <option value="Developing Modern Web">DMW</option>
+            <option value="Data Structure and Algorithm">DSA</option>
+            <option value="Tecnology Ethics and Security">TES</option>
+
+        </select>
+
+        <br/><br/>
+        <label>Gender:</label><br/><br/>
+        
+        <input type="radio" name="Gender" id="Male"/>
+        <label for="Male">Male</label><br/>
+        <input type="radio" name="Gender" id="Female"/>
+        <label for="Female">Female</label><br/>
+        <input type="radio" name="Gender" id="Others"/>
+        <label for="Others">Others</label>
+        
+        <br/> <br/>
+
+        <label>Phone:</label>
+        <input type="tel" id="firstnum" name="firstnum" size="2" value="+91"/>
+        <input type="number" id="phonenum" name="phonenum"/>
+
+        <br/><br/>
+        <label for="address">Address:</label><br/>
+        <textarea id="address" name="address" rows="7" cols="80" required></textarea>
+
+        <br/><br/>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required/>
+
+        <br/><br/>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" required/>
+
+        <br/><br/>
+        <label for="vpass">Re-type password:</label>
+        <input type="password" name="vpass" id="vpass"/>
+
+        <br/><br/>
+        <div class="buttonHolder">
+            <input style="text-align: center;"  type="submit" id="submit" value="Submit" title="submit">
+        </div>
+
+    </form>
+    
+</body>
+</html>

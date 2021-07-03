@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* element selector */
+        p{
+            color: blue;
+        }
+        /* class selector */
+        .p-red{
+            color: red;
+        }
+        /* class and element =descendent selector */
+        div .p-red{
+            color: green;
+        }
+        /* Id only */
+        #p-green{
+            color:yellow;
+
+        }
+        /* inline css */
+        /* important overrides everything */
+        p{
+            color: orchid ;
+        }
+        /* inline css important overrides important */
+    </style>
+    <link rel="stylesheet" href="CSS/cssorder.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order of CSS</title>
+</head>
+<body>
+    <div>
+      <p class="p-red" id="p-green" style="color: orange;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Est officiis, quibusdam veniam consequatur rem quia totam, 
+        unde atque blanditiis facere laboriosam sint,
+        architecto odit odio voluptatibus quod labore commodi aspernatur.
+        </p>
+    </div>
+</body>
+</html>

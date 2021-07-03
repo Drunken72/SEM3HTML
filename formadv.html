@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: rgb(143, 0, 0);
+            font-size: 30px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM</h1>
+<form 
+    enctype="multipart/form-data" 
+    method="POST" 
+    action="" 
+    autocomplete="off"
+    >
+    <label for ="fname">Firstname:</label>
+    <input 
+    type="text" 
+    id="fname" 
+    name="fname" 
+    placeholder="Enter first name"
+    required
+    autofocus
+    />
+    <br/><br/>
+    <label for ="lname">Lastname:</label>
+    <input 
+    type="text" 
+    id="lname" 
+    name="lname"
+    placeholder="Enter last name"
+    required
+    /><br/><br/>
+
+    <label for="password">Password:</label>
+    <input 
+    type="password"
+    id="password"
+    name="password"
+    placeholder="Enter password"
+    required
+    />
+    <br/><br/>
+
+    <label for="image">Image</label>
+    <input type="file" id="image" name="image" required/>
+    <br/><br/>
+
+    <label for="wall">Post</label></form><br/>
+    <textarea 
+    id="wall" 
+    name="wall"
+    cols="40"
+    rows="10"
+    placeholder="Write post"
+    required
+    >
+    </textarea></br></br>
+    <label for="SAARC">SAARC</label>
+    <select id="SAARC" name="SAARC">
+        <option value="NEPAL" selected>NEPAL</option>
+        <option value="INDIA">INDIA</option>
+        <option value="PAKISTAN">PAKISTAN</option>
+        <option value="BHUTAN">BHUTAN</option>
+        <option value="BANGLADESH">BANGLADESH</option>
+        <option value="MALDIVES">MALDIVES</option>
+        <option value="SRI LANKA">SRI LANKA</option>
+        <option value="AFGANISTAN">AFGANISTAN</option>
+        
+    </select><br/><br/>
+
+    <label for="gender">Gender</label>
+    <br/><br/>
+
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="others">
+    <label for="others">Others</label>
+    <br/><br/>
+
+    <label>Education</label>
+    <br/><br/>
+
+    <input type="checkbox" id="D.L.E" name="D.L.E" value="D.L.E"/>
+    <label for="D.L.E">D.L.E</label>
+    <input type="checkbox" id="S.E.E" name="S.E.E" value="S.E.E"/>
+    <label for="S.E.E">S.E.E</label>
+    <input type="checkbox" id="+2" name="+2" value="+2"/>
+    <label for="+2">+2</label>
+    <input type="checkbox" id="Bachelor" name="Bachelor" value="Bachelor"/>
+    <label for="Bachelor">Bachelor</label>
+    <br/><br/>
+
+    <label for="DOB">Date of Birth</label><br/><br/>
+    <input type="date" id="DOB" name="DOB">
+    <br/><br/>
+
+    <label for="Time">Time</label><br/><br/>
+    <input type="time" id="time" name="time" autofocus/>
+    <br/><br/>
+
+    <input type="button" id="login" name="login" value="login"/>
+    <input type="submit" id="submit" name="submit" value="submit"/>
+    <input type="reset" name="reset" value="reset"/><br/><br/>
+
+    
+    <!-- <button type="button" id="" name="">login</button>
+    <button type="submit" id="" name="">sign up</button>
+    <button type="reset" id="" name="">reset</button></form></br> -->
+
+</form>
+</body>
+</html>

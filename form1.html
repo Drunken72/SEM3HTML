@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        label{
+            width: 120px;
+            text-align: lefts;
+            float: left;
+        }
+        h1{
+            font-size: 25px;
+            text-align: center;
+            padding-right: 470px;
+        }
+        .buttonHolder{
+            text-align: center;
+            padding-right: 410px; 
+        }
+        #radioDiv {
+            margin: 0 auto;
+            width: 630px;
+            text-align: left;
+            display: table;
+        }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Novell Services Login</h1><br>
+    <form>
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" 
+        required autofocus/>
+        <br/><br/>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass"
+        required/>
+        <br/>
+
+        <label style="padding-top: 20px;" for="city">City of<br>Employment:</label><br/>
+        <input  type="text" id="city" name="city"
+        required/>
+        <br/><br/><br/>
+
+        <label for="server">Web server:</label>
+        <select id="server" name="server" required>
+            <option>--Choose a server--</option>
+            <option value="Azure">Azure</option>
+            <option value="AWS">AWS</option>
+            <option value="Git">Git</option>
+            <option value="Apache">Apache</option>
+        </select> <br/><br/>
+
+        <label style="padding-top:40px" for="role">Please specify<br>your role:</label><br/>
+        <div id="radioDiv">
+            <input type="radio" name="role" id="Admin"/>
+            <label style="float: unset;" for="Admin">Admin</label><br/>
+            <input type="radio" name="role" id="Engineer"/>
+            <label style="float: unset;" for="Engineer">Engineer</label><br/>
+            <input type="radio" name="role" id="Manager"/>
+            <label style="float: unset;" for="Manager">Manager</label><br/>
+            <input style="text-align: center;" type="radio" name="role" id="Guest"/>
+            <label style="float: unset;" for="Guest">Guest</label>
+        </div>
+        <br/>
+
+        <label style="padding-top:30px;" for="sign-on">Single Sign-on<br> to the following:</label><br/>
+        <div id="radioDiv">
+            <input type="checkbox" id="Mail" name="Mail" value="Mail"/>
+            <label style="float: unset;" for="Mail">Mail</label><br/>
+            <input type="checkbox" id="Payroll" name="Payroll" value="Payroll"/>
+            <label style="float: unset;" for="Payroll">Payroll</label><br/>
+            <input type="checkbox" id="Self-service" name="Self-service" value="Self-service"/>
+            <label style="float:unset;" for="Self-service">Self-service</label>
+        </div>
+        
+        <br/><br/>
+
+       
+        <div class="buttonHolder">
+            <input type="submit" id="login" name="login" value="Login"/>
+            <input type="reset" id="reset" name="reset" value="Reset"/>
+          </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
