@@ -43,8 +43,37 @@
             background-image: url("Image/forest.jpg");
             background-repeat: no-repeat;
             width: 100%;
-            height: 100%
+            height: auto;
 
+        }
+
+        .feat_head{
+            display: flex;
+            flex-direction: row;
+            width :40%;
+            height: 60px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 70px;
+
+        }
+
+        .feat_head_left{
+            line-height: 50px;
+            text-align: right;
+            color : white;
+            padding-left: 70%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .feat_head_right{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1px;
+            line-height: 28px;
+            color :whitesmoke;
+            margin-top: 20px;
+            padding-right: 65px;
         }
 
         .feature_box{
@@ -61,7 +90,7 @@
         }
 
         .feature_head{
-            font-size: 19px;
+            font-size: 14px;
             font-weight: 700;
             color: #a3c962;
             letter-spacing: 1px;
@@ -69,6 +98,30 @@
             text-align: center;
             line-height: 1.2;
             margin-bottom: 20px;
+        }
+
+        .feature_price{
+            text-align: center;
+        }
+
+        .feat_currency{
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 1.2;
+            font-family: -apple-system, BlinkMacSystemFont, 
+            "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+            "Helvetica Neue", sans-serif;
+        }
+
+        .feat_price{
+            font-size: 32px;
+            color: #a3c962;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 
+            "Segoe UI", Roboto,
+            Oxygen-Sans, Ubuntu, Cantarell, 
+            "Helvetica Neue", sans-serif;
         }
 
         .feature_content{
@@ -83,6 +136,7 @@
             margin : 30px;
 
         }
+
 
         .feature_button{
             margin-top: 20px;
@@ -251,20 +305,19 @@
 <!--  ===============================  F   E  A  T  U  R  E ==================== -->
     <div class="feature">
 
-        <!-- <div class="feature_head">
-
-            <div class="blog_heading">
-                <div class="blog_header_right">
-                    <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                    <p style="text-align: left;">eiusmod tempor incididunt ut labore</p> 
-                </div>
+        <div class="feat_head">
+            <div class="feat_head_left">
+                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;text-align: right;"><b>Our Plans</b></p>
+               <h1 style="font-size: 33px;letter-spacing: 2px;line-height: 40px; text-align: right;">Our Prices</h1> 
             </div>
-
-            <div class="blog_header_left">
-                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;text-align: right;"><b>See our Events</b></p>
-            <h1 style="font-size: 33px;letter-spacing: 2px;line-height: 40px; text-align: right;">Our Blog</h1> 
+        </div>
+        
+        <div class="feat_head">
+            <div class="feat_head_right">
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                <p style="text-align: left;">eiusmod tempor incididunt ut labore</p> 
             </div>
-        </div> -->
+        </div>
 
         <div class="feature_box">
             <div class="feature_head">
@@ -272,7 +325,16 @@
             </div>
 
             <div class="feature_price">
-                <H2>$50/month</H2>
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">50</span>
+                    /month
+                </h4>
 
             </div>
 
@@ -304,6 +366,152 @@
 
             </div>
         </div>
+
+        <div class="feature_box">
+            <div class="feature_head">
+                <h1>PREMIUM</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">60</span>
+                    /month
+                </h4>
+
+            </div>
+
+            <ul class="feature_content">
+                
+
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>
+                
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" 
+                style=
+                " background-color: #a3c962;color: whitesmoke;
+                font-size: 14px;
+                padding: 7px 17px;
+                border-radius: 19px;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                border-radius: 20px;
+                border :2px solid white;">
+                Book Now</button>
+
+            </div>
+        </div>
+
+        <div class="feature_box">
+            <div class="feature_head">
+                <h1>PLATINUM</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">70</span>
+                    /month
+                </h4>
+
+            </div>
+
+            <ul class="feature_content">
+                
+
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>
+                
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" 
+                style=
+                " background-color: #a3c962;color: whitesmoke;
+                font-size: 14px;
+                padding: 7px 17px;
+                border-radius: 19px;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                border-radius: 20px;
+                border :2px solid white;">
+                Book Now</button>
+
+            </div>
+        </div>
+
+        <div class="feature_box">
+            <div class="feature_head">
+                <h1>SILVER</h1>
+            </div>
+
+            <div class="feature_price">
+                <h4 style="font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 500;
+                line-height: 1.2;"
+                >
+                    <span class="feat_currency">$</span>
+                    <span class="feat_price">80</span>
+                    /month
+                </h4>
+
+            </div>
+
+            <ul class="feature_content">
+                
+
+                <li>Lorem ipsum</li>  
+                <li>Dolor sit</li>
+                <li>Consectetuer</li>
+                <li>Adipiscing</li>
+                <li>Lorem ipsum</li>
+                
+            </ul>
+
+            <div class="feature_button">
+                <button type="button" 
+                style=
+                " background-color: #a3c962;color: whitesmoke;
+                font-size: 14px;
+                padding: 7px 17px;
+                border-radius: 19px;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                border-radius: 20px;
+                border :2px solid white;">
+                Book Now</button>
+
+            </div>
+        </div>
+
+        
     </div>
 
     <!--  ===================================B  L  O  G=============================================  -->
