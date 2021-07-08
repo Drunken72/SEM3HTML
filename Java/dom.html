@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .changeClass{
+            color : red;
+            background: black;
+            font-size: 24px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        In, nostrum pariatur expedita fugit omnis eligendi esse veniam. 
+        Eaque officiis saepe, unde pariatur dolor reiciendis quae explicabo sunt, eveniet debitis illum?
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consetetur</p>
+    <h1 id="head1">Lorem </h1>
+
+    <span class="span1">span</span>
+    <h2 class="span1">span child</h2>
+
+    <p>adipisicing elit.</p> -->
+<!-- 
+    <img src="..//images/gta5.jpg" width="400" id="img1">
+    <button type="button" onclick="">random</button>
+
+    <script>
+        function changeImage(){
+            var i = document.getElementById("img1")
+            i.src = ""
+        }
+    </script> -->
+
+    <!-- <script>
+        // var x = document.getElementsByTagName("p") //elements  all 
+        // var y = document.getElementById("head1") //ID only
+
+        // var z = document.getElementsByClassName("span1") //different element, same id
+
+        // var w = document.querySelector("p")//selects first of kind
+
+        // var v = document.querySelectorAll("p") //selects all
+
+        // var u = document.querySelectorAll(".span1")
+        
+        // console.log(x)
+        // console.log(u)
+
+        // var x = document.getElementsByTagName("p")
+        // x[0].innerHTML = "text from javascript"; //changing content with array
+
+        // var y = document.getElementById("head1")
+        // y[0].innerHTML = "I dont care"
+
+    </script> -->
+
+    <!-- <p id = "para">Text</p>
+    <button type="button" onclick="changeStyle()">Change</button>
+
+    <script>
+        function changeStyle(){
+            var x = document.getElementById("para")
+            x.style.fontSize = "50px"
+            x.style.color = 'white'
+            x.style.background = "black"
+        }
+    </script> -->
+    <p id = "para1">This is 1</p>
+
+    <button type="button" onclick="addClass()">add class</button>
+    <button type="button" onclick="removeClass()">remove class</button>
+    <script>
+        function addClass(){
+            document.getElementById("para1").classList.add("changeClass")
+        }
+        function removeClass(){
+            document.getElementById("para1").classList.remove("changeClass")
+        }
+    </script>
+</body>
+</html>

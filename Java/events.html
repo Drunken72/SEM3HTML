@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div id="changeLorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate sed totam ipsum in dignissimos facere ex exercitationem explicabo iusto animi ad repudiandae ut temporibus velit, impedit quasi. Nesciunt, earum voluptatum.
+    </div>
+    <button type="button" onclick="clickEvent()">change</button>
+
+    <div id="changeLorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit non, optio harum magni illo doloremque est ducimus voluptates autem quis minus nisi, sapiente nemo sint corrupti reprehenderit! Officia, molestiae vero! part 2</div>
+    <button type="button" ondblclick="clickEvent2()">change X 2</button>
+    
+    <br>
+    <input type="text" onkeyup="keyupEvent()">
+    <input type="text" onkeydown="keydownEvent()">
+
+    <br>
+    <h1 id="head1" onmouseover="mouseEvent()">Hello</h1>
+    <br>
+    <h1 id="head2" onmousemove="mouseEvent2()">Hello2</h1>
+
+    <input type="text" onchange="onchangeEvent(this.value)">    
+    <script>
+
+        function onchangeEvent(userinput){
+            alert("You entered: " + userinput )
+        
+            //parameter passed and output is showed in alert box
+        }
+
+        function clickEvent(){
+            document.getElementById("changeLorem").innerHTML="Text from JScript";
+            //single click to change text
+
+        }
+
+        function clickEvent2(){
+            document.getElementById("changeLorem2").innerHTML="Text from JScript again"
+            //double click to change text
+        }
+
+        function keyupEvent(){
+            alert("Keyup activated")
+            //pops up message after typing
+            //moreimportant than keydown
+        }
+
+        function keydownEvent(){
+            alert("Keydown activated")
+            //popsup message before typing
+        }
+
+        function mouseEvent(){
+            document.getElementById("head1").innerHTML = "Kono Dio da"
+            //hover mouse change text
+        }
+        
+        function mouseEvent2(){
+            document.getElementById("head2").innerHTML = "JoJo"
+        }
+
+    </script>
+</body>
+</html>
