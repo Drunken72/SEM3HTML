@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 100vh;
+    background-image: url("../images/forest.jpg");
+    background-size: cover;
+
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style-type: none;
+    padding:20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu ul li a:hover{
+    color: #a3c962;
+}
+
+.header-content{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+
+.header-center-content{
+    text-align: center;
+    padding: 5px;
+}
+
+.header-button{
+    margin-top: 50px;
+}
+
+.btn1,.btn2{
+    border:2px solid white;
+    border-radius:20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 1s;
+    letter-spacing: 2px ;
+}
+
+.btn1{
+    background-color: white;
+    color: #a3c962;
+}
+
+.btn2{
+    background-color: #a3c962;
+    color: white;
+}
+
+.btn1:hover,.btn2:hover{
+    background-color: black;
+    color: white;
+}
+/* =======================================   A    B   O  U   T   =========================== */
+/* .About{
+    display :flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 30vh;
+    padding: 20px;
+
+}
+
+.About p{
+
+}
+
+.green-header{
+    color: #a3c962;
+}
+.what-we-do-head{
+    font-size: 20px;
+
+}
+
+.Aboutdesc{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 200px 100px;
+
+}
+
+.Aboutdesc p{
+    line-height: 30px;
+}
+
+.About_Image, .About_Content{
+    width: 45%;
+}
+
+
+/* =============================  S   E   R   V   I  C   E =================== */
+
+/* .Service{
+    height: 115vh;
+    background-image: url("../images/service.jpg");
+}
+
+.Service-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 200px;
+}
+
+.Service-left, .Service-right{
+    width: 45%;
+    padding: 15px;
+}
+
+.service-heading{
+    font-size: 40px;
+    color: white;
+    padding-top : 10px;
+}
+
+.service-para{
+    color: white;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.service-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    padding: 20px;
+    margin:;
+    transition: 1sec;
+ 
+}
+
+.service-card p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.card-icon, .card-head, .card-text{
+    padding: 10px;
+}
+
+.service-card:hover{
+    background-color: rgb(165, 135, 135);
+}  */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validForm(){
+            let fname = document.getElementById("fname")
+            let lname = document.getElementById("lname")
+            let phone = document.getElementById("phone")
+            let email = document.getElementById("email")
+            let pass = document.getElementById("pass")
+
+            let letters = /^[A-Za-z]+$/;
+
+            let numbers = /^[0-9]+$/;
+
+            let alphanumeric = /^[0-9a-zA-Z]+$/;
+
+            let phone_pattern = /^\b\d{3}[-.]?\d{3}[-.]?\d{4}\b$/;
+
+            let email_pattern = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,5})$/;
+
+            let password_pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+
+
+            if(!fname.value.match(letters)){
+                alert("Alphabets for name")
+                fname.focus()
+                return false
+            }
+
+            if(!lname.value.match(letters)){
+                alert("Alphabets for name")
+                lname.focus()
+                return false
+            }
+
+            if(!pass.value.match(password_pattern)){
+                alert("invalid password")
+                pass.focus()
+                return false
+            }
+            return true
+
+            
+
+          
+            // if (fname.value == "" && lname.value == "" && pass.value == "" && phone.value == "" && email.value == ""){
+            //     alert("Data missing")
+            //     fname.focus
+            //     return false
+
+            // }
+
+            // if (fname.value == ""){
+            //     alert("First name missing")
+            //     fname.focus
+            //     return false
+
+            // }
+
+            // if (lname.value == ""){
+            //     alert("Last name missing")
+            //     lname.focus
+            //     return false
+            // }
+
+            // if(pass.value.length<8 || pass.value.length>20){
+            //     alert("Password less than 8 characters")
+            //     pass.focus
+            //     return false
+            // }
+
+            // if (isNaN(phone.value)){
+            //     alert("Number is incorrect")
+            //     phone.focus
+            //     return false
+            // }
+
+            
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action = ""  method = "" onsubmit="return validForm()">
+        <input type="text" name="fname" id="fname" placeholder="Enter first name"><br><br>
+        <input type="text" name="lname" id="lname" placeholder="Enter last name"><br><br>
+        <input type="number" name="phone" id="phone" placeholder="Enter number" min = "1" max = "1000000000"><br><br>
+        <input type="email" name="email" id="email" placeholder="Enter email"><br><br>
+        <input type="password" name="pass" id="pass" placeholder="Enter password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
