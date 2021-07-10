@@ -6,32 +6,93 @@
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            
+            box-sizing: border-box;    
         }
-        .forest{
-            display: flex;
-            /* background-image: url("Image/forest.jpg"); */
-            width: fit-content;
-            /* flex-wrap: wrap; */
-            max-height: 500px ;
-            background-position: center center;
-            background-attachment: fixed;
+/* ===================================  H  E  A  D  E  R  ============================================= */
+        header{
+            height: 100vh;
+            background-image: url("Image/forest.jpg");
             background-size: cover;
-            background-repeat: no-repeat;
         }
-            
-        
-        /* .navbar{
-            width: 200px;
-            border: 1px solid white;
-            margin: 10px;
-            justify-content: center;
+
+        .header_navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            align-items: center;
+        }
+
+        .logo_navbar{
             color: white;
-        } */
-        .first_phrase{
+            font-weight: bolder;
+            letter-spacing: 1px;
+            padding-left: 10px;
+            font-size: 15px;
+            font-family: "Segoe UI"  
+        }
+
+        .menu_navbar ul{
+            display: flex;
+        }
+
+        .menu_navbar ul li{
+            list-style-type: none;
+            padding:20px;
+            font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+        }
+
+        .menu_navbar ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .menu_navbar ul li a:hover{
+            color: #a3c962;
+        }
+
+        .header_content{
+            display: flex;
+            height: 70vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            margin-top: 25px ; 
+        }
+
+        .header_desc{
             text-align: center;
-            line-height: 40px;
+            padding: 5px;
+        }
+
+        .header_button{
+            margin-top: 50px;
+        }
+
+        .btn1,.btn2{
+            border:2px solid white;
+            border-radius:20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: 1s;
+            letter-spacing: 2px ;
+        }
+
+        .btn1{
+            background-color: white;
+            color: #a3c962;
+        }
+
+        .btn2{
+            background-color: #a3c962;
+            color: white;
+        }
+
+        .btn1:hover,.btn2:hover{
+            background-color: black;
+            color: white;
         }
 /* ===================================F E A T U R E S============================================= */
 
@@ -428,31 +489,45 @@
     <link rel="shortcut icon" href="Image/brownlogo.png" />
 </head>
 <body>
+<!--  ===============================  H  E  A   D   E   R  ========================== -->
 
-    <div class="forest">
-        <!-- <img src="Image/forest.jpg" width=100%> -->
-        <!-- <div class="navbar">
-            <ul>
-                <li><h3>FOREST</h3></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div> -->
-    </div>
-
-    <div class="About">
-        <div class="first_phrase">
-            <h3 style="color: lime;">What we do</h3>
-            <h2>STANDING TOGETHER FOR A BETTER WORLD</h2><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
-                Lorem ipsum dolor sit amet, consectetur 
-            </p>
+    <header>
+        <div class="header_navbar">
+            <div class="logo_navbar">
+                <h1>Forest</h1>
+            </div>
+            <div class="menu_navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+
+        <div class = "header_content">
+            <div class = "header_desc">
+                <p style="font-size: 30px; margin-bottom: 10px;">Global Warming</p>
+                <p style="font-size: 55px; font-weight: 800; margin-bottom: 20px ;">Save Forest And Save Earth</p>
+                <P style="
+                font-size: 15px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;color: #dadada">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing elit sed do<br> eiusmod tempor incididunt Lorem
+                    </P>
+            </div>
+
+            <div class="header_button">
+                <button type="button" class="btn1">About Us</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn2">Join Us</button>
+            </div>
+        </div>
+    </header>
+
 
 <!--  ===============================  F   E  A  T  U  R  E ==================== -->
     <div class="feature">
