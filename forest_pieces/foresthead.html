@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        header{
+            height: 100vh;
+            background-image: url("../forest pieces/forestheadimg/forest.jpg");
+            background-size: cover;
+
+        }
+
+        .header_navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            align-items: center;
+            
+        
+        
+        }
+
+        .logo_navbar{
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            padding-left: 10px;
+            font-size: 15px;
+            font-family: "Segoe UI"
+        
+            
+        }
+
+        .menu_navbar ul{
+            display: flex;
+        }
+
+        .menu_navbar ul li{
+            list-style-type: none;
+            padding:20px;
+            font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+        }
+
+        .menu_navbar ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .menu_navbar ul li a:hover{
+            color: #a3c962;
+        }
+
+        .header_content{
+            display: flex;
+            height: 70vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            margin-top: 25px ;
+            
+        }
+
+        .header_desc{
+            text-align: center;
+            padding: 5px;
+        }
+
+        .header_button{
+            margin-top: 50px;
+        }
+
+        .btn1,.btn2{
+            border:2px solid white;
+            border-radius:20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: 1s;
+            letter-spacing: 2px ;
+        }
+
+        .btn1{
+            background-color: white;
+            color: #a3c962;
+        }
+
+        .btn2{
+            background-color: #a3c962;
+            color: white;
+        }
+
+        .btn1:hover,.btn2:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div class="header_navbar">
+            <div class="logo_navbar">
+                <h1>Forest</h1>
+            </div>
+            <div class="menu_navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "header_content">
+            <div class = "header_desc">
+                <p style="font-size: 30px; margin-bottom: 10px;">Global Warming</p>
+                <p style="font-size: 55px; font-weight: 800; margin-bottom: 20px ;">Save Forest And Save Earth</p>
+                <P style="
+                font-size: 15px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;color: #dadada">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing elit sed do<br> eiusmod tempor incididunt Lorem
+                    </P>
+            </div>
+
+            <div class="header_button">
+                <button type="button" class="btn1">About Us</button>&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn2">Join Us</button>
+            </div>
+        </div>
+    </header>
+
+ 
+</body>
+</html>
