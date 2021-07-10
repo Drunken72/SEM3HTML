@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    box-sizing: border-box; 
 }
 
 header{
@@ -12,52 +11,65 @@ header{
 
 }
 
-.header-top{
+.header_navbar{
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
     align-items: center;
+    
+   
+ 
 }
 
-.logo{
+.logo_navbar{
     color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-family: "Segoe UI"
+   
+    
 }
 
-.menu ul{
+.menu_navbar ul{
     display: flex;
 }
 
-.menu ul li{
+.menu_navbar ul li{
     list-style-type: none;
     padding:20px;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
-.menu ul li a{
+.menu_navbar ul li a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
-.menu ul li a:hover{
+.menu_navbar ul li a:hover{
     color: #a3c962;
 }
 
-.header-content{
+.header_content{
     display: flex;
     height: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:white
+    color:white;
+    margin-top: 25px ;
+    
 }
 
-.header-center-content{
+.header_desc{
     text-align: center;
     padding: 5px;
 }
 
-.header-button{
+.header_button{
     margin-top: 50px;
 }
 
