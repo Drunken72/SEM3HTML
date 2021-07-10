@@ -97,7 +97,7 @@ header{
     color: white;
 }
 /* =======================================   A    B   O  U   T   =========================== */
-/* .About{
+ .About{
     display :flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,16 +107,11 @@ header{
 
 }
 
-.About p{
-
-}
-
 .green-header{
     color: #a3c962;
 }
 .what-we-do-head{
     font-size: 20px;
-
 }
 
 .Aboutdesc{
@@ -124,7 +119,6 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 30px 200px 100px;
-
 }
 
 .Aboutdesc p{
