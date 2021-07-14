@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .maindiv{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            display: none;
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Effects in Jquery</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Main div</h1>
+    </div>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="combo">HS</button>
+    <button id="faded">Fade</button>
+    <button id="perish">Perish</button>
+    <button id="fadeinout">ToggleFade</button>
+
+    <script>
+        $(document).ready(function(){
+
+// ======================= hide/show effects =====================================
+            $("#hide").click(function(){
+                $('.maindiv').hide(1000)//speed in text
+            })
+
+            $("#hide").click(function(){
+                $(".maindiv").show(1000)//speed in milliseconds
+            })
+
+            $("#combo").click(function(){
+                $(".maindiv").toggle(1000)
+            })
+// ======================= fade effects =====================================
+            $("#faded").mouseenter(function(){
+                $('.maindiv').fadeIn(2000)
+            })
+
+            $('#perish').mouseleave(function(){
+                $('.maindiv').fadeOut(2000)
+            })
+
+            $('#fadeinout').click(function(){
+                $('.maindiv').fadeToggle(1000)
+            })
+        })
+    </script>
+</body>
+</html>

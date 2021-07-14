@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery First</title>
+    <script src="jquery-3.6.0.min.js"></script>  
+    <!-- local link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CDN (Content Delivery Network) link -->
+    <style>
+        p{
+            height: 500px;
+            width: auto;
+            background-color: brown;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p id="1P">Jquery Test</p>
+    <button class="btn">Click</button>
+
+    <script>
+        $('#1P').click(function(){
+
+        })
+        // document.getElementById("1P") same as jscript but shortcut 
+    </script>
+
+    <!-- <script>
+        $('.btn').click(function(){
+            $('#1P').hide()
+        })
+    </script> -->
+<!-- jQuery = $ (shortcut  version to indicate jQuery) -->
+    <!-- <script>
+        $(document).ready(function(){ //(document).ready = loads animation after website is completely projected
+            $('.btn').click(function(){
+                $('#1P').hide()
+        })
+
+        })
+    </script> -->
+
+    <!-- <script>
+        $(function(){ //shortcut version of above code. Not prefered in low level
+            $('.btn').click(function(){
+                $('#1P').hide()
+        })
+
+        })
+    </script> -->
+
+    <script>
+        $(document).ready(function(){ //(document).ready = loads animation after website is completely projected
+            $('.btn').click(function(){
+                $('#1P').slideUp()
+        })
+
+        })
+    </script>
+    
+</body>
+</html>
