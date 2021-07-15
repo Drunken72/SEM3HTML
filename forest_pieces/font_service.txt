@@ -1,0 +1,12 @@
+SAPLING
+<i class="fab fa-pagelines"></i>
+WILDLIFE
+<i class="fas fa-paw"></i>
+TREE
+<i class="fas fa-tree"></i>
+WATER
+<i class="fas fa-tint"></i>
+LEAF
+<i class="fab fa-envira"></i>
+CLIMATE
+<i class="far fa-snowflake"></i>
