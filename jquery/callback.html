@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        main{
+            background-color: rebeccapurple;
+            height: 300px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        first title
+    </main>
+    <button id="callback">Call</button>
+    <button id="addcss">Add CSS</button>
+    <button id="addmcss">Add Multiple Css</button>
+    <input type="button" id="btn" value="hide">
+    <script>
+        $(document).ready(function(){
+
+            $('#btn').click(function(){
+                let btnValue = $('#btn').val()
+                if (btnValue=='hide'){
+                    $('main').hide()
+                    $(this).val('show')
+                }
+                else if (btnValue=='show'){
+                    $('main').show()
+                    $(this).val('hide')
+                }
+            })
+            
+
+            //css
+
+            $('#addcss').click(function(){
+                $('main').css('backgroundColor','blue')
+            })
+
+            $('#addmcss').click(function(){
+                $('main').css({'backgroundColor':'red', 'color':'white'})
+            })
+
+            $("#callback").click(function(){
+                $('main').slideUp(1000,function(){ 
+                    alert('Slide at top')
+                })
+                
+            })
+
+            // $('main').slideUp(1000,function(){ //loads automatically without pressing any button
+            //         alert('Slide at top')   //function inside function is a callback function
+            //     })
+        })
+    </script>
+</body>
+</html>
