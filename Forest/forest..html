@@ -178,9 +178,9 @@
 /* ===================================  S  E  R  V  I  C  E  ============================================= */
         
         .service{
-            height: 100vh;
             background-image: url("Image/Service/greenland.jpg") ;
-            background-size: cover;
+            overflow: none;
+            height: max-content;
         }
 
         .service_head{
@@ -230,6 +230,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 10px;
+            padding-bottom: 50px;
             margin-top: auto;
         }
 
@@ -300,9 +301,40 @@
             letter-spacing: 1px;
             font-family: 'Playfair Display', serif;
         }
+/* =================================== P R I C E S == F E A T U R E S ============================================= */
+        .price_head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 150px;
+        }
 
+        .price_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;     
+        }
+        .price_head_left, .price_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .price_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1.2px;
+            color : #676662;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .price_head_right{
+            line-height: 50px;
+        }
       
-/* ===================================F E A T U R E S============================================= */
+/* =================================== F E A T U R E S == P R I C E S ============================================= */
 
         .feature{
                 
@@ -450,30 +482,35 @@
         .client_head{
             display: flex;
             flex-direction: row;
-            width :40%;
-            height: 60px;
-            margin-top: 30px;
-            margin-bottom: 100px;
-        
+            align-items: center;
+            justify-content: center;
+            padding: 40px 150px;
+        }
+
+        .client_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .client_head_left, .client_head_right{
+            width: 45%;
+            padding: 15px;
         }
 
         .client_head_left{
             font-size: 14px;
             font-family: 'Open Sans', sans-serif;
-            letter-spacing: 1px;
-            line-height: 28px;
-            margin-top: 20px;
-            padding-left: 65px;
+            letter-spacing: 1.2px;
+            color : #676662;
             text-align: right;
-  
+            line-height: 30px;
         }
 
-        .client_head_right{  
-            
-            line-height: 50px;
-            padding-right: 0%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align : left;  
+        .client_head_right{      
+            line-height: 50px; 
         }
 
         
@@ -549,6 +586,48 @@
             font-size: 2rem;
         }
 /* ===================================  V  O  L  U  N  T  E  E  R   ============================================= */
+        .volunteer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .volunteer_head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 150px;
+        }
+
+        .volunteer_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .volunteer_head_left, .volunteer_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .volunteer_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1.2px;
+            color : #676662;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .volunteer_head_right{      
+            line-height: 50px; 
+        }
 
        
 
@@ -628,6 +707,52 @@
             line-height: 90px;
            
         }
+
+ /* ===================================   C O N T A C T    ============================================= */
+        .contact{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .contact_head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 150px;
+        }
+
+        .contact_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .contact_head_left, .contact_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .contact_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1.2px;
+            color : #676662;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .contact_head_right{      
+            line-height: 50px; 
+        }
+
+
  /* ===================================   M    A    P   ============================================= */
 
         .map{
@@ -882,7 +1007,20 @@
             </div>
         </div>
     </div>
-<!--  ===============================  F   E  A  T  U  R  E ==================== -->
+
+<!--  ===============================  P R I C E S == F E A T U R E S ==================== -->
+    <div class="price">
+        <div class="price_head">
+            <div class="price_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+            <div class="price_head_right">
+                <h3>Our hard work</h3>
+                <p class="price_title">Our Features</p>
+            </div>
+        </div>
+    </div>
+<!--  ===============================  F E A T U R E S == P R I C E S ==================== -->
     <div class="feature">
 
         <div class="feat_head">
@@ -1035,15 +1173,13 @@
 
         <div class="client_head">
             <div class="client_head_left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                <p>eiusmod tempor incididunt ut labore</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore</p>
             </div>
-        </div>
 
-        <div class="client_head">
             <div class="client_head_right">
-                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;">What Say peoples</p>
-                <h1 style="font-size: 35px;letter-spacing: 2px;font-weight: lighter;">Our Clients</h1>
+                <h3>What Say peoples</h3>
+                <p class="client_title">Our Clients</h1>
             </div>
         </div>
 
@@ -1057,10 +1193,7 @@
                 <h6 class="client_client">Our Client</h6>
                 <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore</p>
-
             </div>
-
-
         </div>
 
         <div class="client_box">
@@ -1111,8 +1244,20 @@
     </div>
 
     <!--  ===================================  V  O  L  U  N  T  E  E  R   =============================================  -->
+    <div class="volunteer" id="volunteer">
 
-    
+        <div class="volunteer_head">
+            <div class="volunteer_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore</p>
+            </div>
+
+            <div class="volunteer_head_right">
+                <h3>We Are Best</h3>
+                <p class="volunteer_title">Our Volunteer</h1>
+            </div>
+        </div>
+    </div>
     <!--  ===================================  B  L  O  G  =============================================  -->
 
     <div class="blog" id="blog">
@@ -1194,11 +1339,22 @@
         </div>
     </div>
 
-    <!-- <div class="Service">
-        <img src="Image/greenland.jpg" width="100%">
-        
 
-    </div> -->
+<!--  ===================================  C O N T A C T   =============================================  -->
+   <div class="contact" id="contact">
+
+        <div class="contact_head">
+            <div class="contact_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore</p>
+            </div>
+
+            <div class="contact_head_right">
+                <h3>Get Touch in</h3>
+                <p class="contact_title">Contact Us</h1>
+            </div>
+        </div>
+    </div>
  <!--  ===================================   M     A      P   =============================================  -->
 
 
