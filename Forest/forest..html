@@ -179,8 +179,9 @@
         
         .service{
             background-image: url("Image/Service/greenland.jpg") ;
-            overflow: none;
+            overflow: hidden;
             height: max-content;
+            background-repeat: no-repeat;
         }
 
         .service_head{
@@ -195,7 +196,7 @@
             letter-spacing: 2px; 
             font-weight: lighter;
             color: white;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Georgia, Times, 'Times New Roman', serif;
         }
 
         .service_head_left{
@@ -337,61 +338,68 @@
 /* =================================== F E A T U R E S == P R I C E S ============================================= */
 
         .feature{
-                
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
             background-image: url("Image/forest.jpg");
             background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-
         }
 
         .feat_head{
             display: flex;
             flex-direction: row;
-            width :40%;
-            height: 60px;
             justify-content: center;
-            margin-top: 30px;
-            margin-bottom: 70px;
+            padding: 60px 150px;
+            padding-bottom: 20px;
 
         }
 
         .feat_head_left{
-            line-height: 50px;
+            line-height: 60px;
             text-align: right;
             color : white;
-            padding-left: 70%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            font-family: Georgia, Times, 'Times New Roman', serif
+        }
+
+        .feat_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: white;
+            font-family: Georgia, Times, 'Times New Roman', serif;     
         }
 
         .feat_head_right{
             font-size: 14px;
             font-family: 'Open Sans', sans-serif;
             letter-spacing: 1px;
-            line-height: 28px;
-            color :whitesmoke;
-            margin-top: 20px;
-            padding-right: 65px;
+            line-height: 30px;
+            color :#d8d8d8;
+            padding-top: 10px;
+        }
+
+        .feat_head_left,.feat_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .feature_box_container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            padding-bottom: 20px;
         }
 
         .feature_box{
-            flex-direction: row;
-            width: 285px;
+            width: 250px;
             height: 371px;
-            margin: 10px;
+            margin: 15px;
             overflow: hidden;
             background-color: white;
             padding: 20px;
             justify-content: space-around;
             margin-bottom: 50px;
-            padding: 1.5em 1.5em;
         }
 
         .feature_head{
-            font-size: 14px;
+            font-size: 10.5px;
             font-weight: 700;
             color: #a3c962;
             letter-spacing: 1px;
@@ -471,20 +479,15 @@
 /* ===================================  C  L  I  E  N  T  ============================================= */
 
         .client{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 50px;
+            margin-top: 8px;
+            margin-bottom: 40px;
         }
 
         .client_head{
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
-            padding: 40px 150px;
+            padding: 38px 150px;
         }
 
         .client_title{
@@ -492,7 +495,7 @@
             letter-spacing: 2px; 
             font-weight: lighter;
             color: black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Georgia, Times, 'Times New Roman', serif;
         }
 
         .client_head_left, .client_head_right{
@@ -513,6 +516,11 @@
             line-height: 50px; 
         }
 
+        .client_box_container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         
         .client_box{
             flex-direction: row;
@@ -523,8 +531,13 @@
             line-height: 30px;
             letter-spacing: 1px;
             font-family: 'Open Sans', sans-serif;
-            margin-left: 20px;
+            margin: 20px;
            
+        }
+
+        .client img{
+            padding: .25rem;
+            border: 1px solid #dee2e6;
         }
 
         .client_name{
@@ -544,6 +557,7 @@
 
         .client_desc{
             font-size: 14px;
+            color: #4c4c4c;
         }
 
 /* ===================================  V  I   D  E   O   ============================================= */
@@ -586,21 +600,12 @@
             font-size: 2rem;
         }
 /* ===================================  V  O  L  U  N  T  E  E  R   ============================================= */
-        .volunteer{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-
         .volunteer_head{
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
-            padding: 40px 150px;
+            padding: 80px 150px;
+            padding-bottom: 10px;
         }
 
         .volunteer_title{
@@ -608,7 +613,7 @@
             letter-spacing: 2px; 
             font-weight: lighter;
             color: black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Georgia, Times, 'Times New Roman', serif;
         }
 
         .volunteer_head_left, .volunteer_head_right{
@@ -629,54 +634,100 @@
             line-height: 50px; 
         }
 
-       
+
+        .volunteer_box_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+
+        .volunteer_box{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            padding:10px;
+            margin: 5px;   
+        }
+
+        .volunteer_desc{
+            margin-top: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .volunteer_desc h3{
+            line-height: 1.2;
+            font-size: 24px;
+            font-weight: bolder !important;
+        }
+        .volunteer_desc p{
+            font-size: 1rem;
+            font-family:'Open Sans', sans-serif;
+            color: #212529;
+            line-height: 2;
+
+        }
+
+        .volunteer_icon{
+            display: flex;
+            justify-content: space-around;
+        }
+        .facebook_logo, .twitter_logo, .rss_logo{
+            margin: 5px
+        }
 
 /* ===================================  B  L  O  G  ============================================= */
 
         .blog{
-        
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
             background-image: url("Image/blogbackground.jpg");
             background-repeat: no-repeat;
-            width: 100%;
-            height: auto;
-            margin-top: 5px;
-            margin-bottom: 5px;
-    
         }
 
         .blog_heading{
             display: flex;
             flex-direction: row;
-            width :40%;
-            height: 60px;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 150px;
+        }
 
-            margin-top: 30px;
-            margin-bottom: 70px;
+        .blog_header_left,.blog_header_right{
+            width: 45%;
+            padding: 15px;
         }
 
         .blog_header_left{
-
-            line-height: 50px;
+            line-height: 50px; 
             text-align: right;
-            color : white;
-            padding-left: 70%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #dadada;
         }
 
         .blog_header_right{
             font-size: 14px;
             font-family: 'Open Sans', sans-serif;
-            letter-spacing: 1px;
-            line-height: 28px;
-            color :whitesmoke;
-            margin-top: 20px;
-            padding-right: 65px;
+            letter-spacing: 1.2px;
+            color : #d8d8d8;
             text-align: left;
+            line-height: 30px;
+        }
+
+        .blog_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
         }
         
+        .blog_box_container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         .blog_box{
             flex-direction: row;
@@ -710,12 +761,7 @@
 
  /* ===================================   C O N T A C T    ============================================= */
         .contact{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            margin-bottom: 50px;
+            
         }
 
         .contact_head{
@@ -765,28 +811,42 @@
 
 /* ===================================F  0  0  T  E  R============================================= */
 
+        footer{
+            background-color: rgb(163,201,98);
+
+        }
         .last{
             display: flex;
-            background-color: rgb(163,201,98);
             flex-wrap: wrap;
             justify-content: center;
-            height: 200px;
-            padding-top: 40px;
+            padding-top: 30px;
             font-family: 'Open Sans', sans-serif;
             color: white;
-            letter-spacing: 3px;
+            letter-spacing: 1.5px;
+        }
+        footer span{
+            cursor: pointer;
+            color: black;
+        }
+
+        footer span:hover{
+            color : white;
+            text-decoration: white underline;
+            transition: 0.5s;
         }
         .icon{
             display: flex;
-            flex-wrap: wrap;  
-            padding-top: 30px;   
-            width: 200px;
-            justify-content: space-between;
-            margin-left: 200px;
+            justify-content: center;  
+            padding-top: 20px;   
             cursor: pointer;
         }
+        .facebook_logo,.twitter_logo,.rss_logo,.vk_logo{
+            margin: 5px;          
+        }
         .arrow{
-            padding-left: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0px;
         }
 
 
@@ -1025,144 +1085,143 @@
 
         <div class="feat_head">
             <div class="feat_head_left">
-                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;"><b>Our Plans</b></p>
-               <h1 style="font-size: 33px;letter-spacing: 2px; font-weight: lighter; ">Our Prices</h1> 
+                <h3>Our Plans</h3>
+               <h1 class="feat_title ">Our Prices</h1> 
             </div>
-        </div>
-        
-        <div class="feat_head">
+       
             <div class="feat_head_right">
-                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                <p style="text-align: left;">eiusmod tempor incididunt ut labore</p> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore</p> 
             </div>
         </div>
+        <div class="feature_box_container">
+            <div class="feature_box">
+                <div class="feature_head">
+                    <h1>GOLDEN</h1>
+                </div>
 
-        <div class="feature_box">
-            <div class="feature_head">
-                <h1>GOLDEN</h1>
+                <div class="feature_price">
+                    <h4 style="font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 500;
+                    line-height: 1.2;" >
+                        <span class="feat_currency">$</span>
+                        <span class="feat_price">50</span>
+                        /month
+                    </h4>
+                </div>
+
+                <ul class="feature_content">
+                    <li>Lorem ipsum</li>  
+                    <li>Dolor sit</li>
+                    <li>Consectetuer</li>
+                    <li>Adipiscing</li>
+                    <li>Lorem ipsum</li>              
+                </ul>
+
+                <div class="feature_button">
+                    <button type="button" > Book Now</button>
+                </div>
             </div>
 
-            <div class="feature_price">
-                <h4 style="font-size: 16px;
-                letter-spacing: 1px;
-                font-family: 'Playfair Display', serif;
-                font-weight: 500;
-                line-height: 1.2;" >
-                    <span class="feat_currency">$</span>
-                    <span class="feat_price">50</span>
-                    /month
-                </h4>
+            <div class="feature_box">
+                <div class="feature_head">
+                    <h1>PREMIUM</h1>
+                </div>
+
+                <div class="feature_price">
+                    <h4 style="font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 500;
+                    line-height: 1.2;"
+                    >
+                        <span class="feat_currency">$</span>
+                        <span class="feat_price">60</span>
+                        /month
+                    </h4>
+                </div>
+
+                <ul class="feature_content">
+                    <li>Lorem ipsum</li>  
+                    <li>Dolor sit</li>
+                    <li>Consectetuer</li>
+                    <li>Adipiscing</li>
+                    <li>Lorem ipsum</li>                
+                </ul>
+
+                <div class="feature_button">
+                    <button type="button" >Book Now</subscribe></button>
+                </div>
             </div>
 
-            <ul class="feature_content">
-                <li>Lorem ipsum</li>  
-                <li>Dolor sit</li>
-                <li>Consectetuer</li>
-                <li>Adipiscing</li>
-                <li>Lorem ipsum</li>              
-            </ul>
+            <div class="feature_box">
 
-            <div class="feature_button">
-                <button type="button" > Book Now</button>
-            </div>
-        </div>
+                <div class="feature_head">
+                    <h1>PLATINUM</h1>
+                </div>
 
-        <div class="feature_box">
-            <div class="feature_head">
-                <h1>PREMIUM</h1>
-            </div>
+                <div class="feature_price">
+                    <h4 style="font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 500;
+                    line-height: 1.2;"
+                    >
+                        <span class="feat_currency">$</span>
+                        <span class="feat_price">70</span>
+                        /month
+                    </h4>
+                </div>
 
-            <div class="feature_price">
-                <h4 style="font-size: 16px;
-                letter-spacing: 1px;
-                font-family: 'Playfair Display', serif;
-                font-weight: 500;
-                line-height: 1.2;"
-                >
-                    <span class="feat_currency">$</span>
-                    <span class="feat_price">60</span>
-                    /month
-                </h4>
-            </div>
+                <ul class="feature_content">
+                    
 
-            <ul class="feature_content">
-                <li>Lorem ipsum</li>  
-                <li>Dolor sit</li>
-                <li>Consectetuer</li>
-                <li>Adipiscing</li>
-                <li>Lorem ipsum</li>                
-            </ul>
+                    <li>Lorem ipsum</li>  
+                    <li>Dolor sit</li>
+                    <li>Consectetuer</li>
+                    <li>Adipiscing</li>
+                    <li>Lorem ipsum</li>
+                </ul>
 
-            <div class="feature_button">
-                <button type="button" >Book Now</subscribe></button>
-            </div>
-        </div>
+                <div class="feature_button">
+                    <button type="button">Book Now</subscribe>
+                    </button>
+                </div>
 
-        <div class="feature_box">
-
-            <div class="feature_head">
-                <h1>PLATINUM</h1>
             </div>
 
-            <div class="feature_price">
-                <h4 style="font-size: 16px;
-                letter-spacing: 1px;
-                font-family: 'Playfair Display', serif;
-                font-weight: 500;
-                line-height: 1.2;"
-                >
-                    <span class="feat_currency">$</span>
-                    <span class="feat_price">70</span>
-                    /month
-                </h4>
-            </div>
+            <div class="feature_box">
 
-            <ul class="feature_content">
-                
+                <div class="feature_head">
+                    <h1>SILVER</h1>
+                </div>
 
-                <li>Lorem ipsum</li>  
-                <li>Dolor sit</li>
-                <li>Consectetuer</li>
-                <li>Adipiscing</li>
-                <li>Lorem ipsum</li>
-            </ul>
+                <div class="feature_price">
+                    <h4 style="font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 500;
+                    line-height: 1.2;"
+                    >
+                        <span class="feat_currency">$</span>
+                        <span class="feat_price">80</span>
+                        /month
+                    </h4>
+                </div>
 
-            <div class="feature_button">
-                <button type="button">Book Now</subscribe>
-                </button>
-            </div>
+                <ul class="feature_content">
+                    <li>Lorem ipsum</li>  
+                    <li>Dolor sit</li>
+                    <li>Consectetuer</li>
+                    <li>Adipiscing</li>
+                    <li>Lorem ipsum</li>   
+                </ul>
 
-        </div>
-
-        <div class="feature_box">
-
-            <div class="feature_head">
-                <h1>SILVER</h1>
-            </div>
-
-            <div class="feature_price">
-                <h4 style="font-size: 16px;
-                letter-spacing: 1px;
-                font-family: 'Playfair Display', serif;
-                font-weight: 500;
-                line-height: 1.2;"
-                >
-                    <span class="feat_currency">$</span>
-                    <span class="feat_price">80</span>
-                    /month
-                </h4>
-            </div>
-
-            <ul class="feature_content">
-                <li>Lorem ipsum</li>  
-                <li>Dolor sit</li>
-                <li>Consectetuer</li>
-                <li>Adipiscing</li>
-                <li>Lorem ipsum</li>   
-            </ul>
-
-            <div class="feature_button">
-                <button type="button" >Book Now</subscribe></button>
+                <div class="feature_button">
+                    <button type="button" >Book Now</subscribe></button>
+                </div>
             </div>
         </div>
     </div>
@@ -1183,51 +1242,52 @@
             </div>
         </div>
 
-        <div class="client_box">
-            <div class="client_img">
-                <img src="Image/Client/lostkid.jpg">
+        <div class="client_box_container">
+            <div class="client_box">
+                <div class="client_img">
+                    <img src="Image/Client/lostkid.jpg">
+                </div>
+
+                <div class="client_content">
+                    <h3 class="client_name"  >Ted Willson</h3>
+                    <h6 class="client_client">Our Client</h6>
+                    <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore</p>
+                </div>
             </div>
 
-            <div class="client_content">
-                <h3 class="client_name"  >Ted Willson</h3>
-                <h6 class="client_client">Our Client</h6>
-                <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore</p>
+            <div class="client_box">
+                <div class="client_img">
+                    <img src="Image/Client/scarf.jpg">
+                </div>
+
+                <div class="client_content">
+                    <h3 class="client_name"  >Orcand Keen</h3>
+                    <h6 class="client_client">Our Client</h6>
+                    <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="client_box">
+                <div class="client_img">
+                    <img src="Image/Client/nerd.jpg">
+                </div>
+
+                <div class="client_content">
+                    <h3 class="client_name"  >Jack Killy</h3>
+                    <h6 class="client_client">Our Client</h6>
+                    <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore</p>
+
+                </div>
+
+
             </div>
         </div>
-
-        <div class="client_box">
-            <div class="client_img">
-                <img src="Image/Client/scarf.jpg">
-            </div>
-
-            <div class="client_content">
-                <h3 class="client_name"  >Orcand Keen</h3>
-                <h6 class="client_client">Our Client</h6>
-                <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore</p>
-
-            </div>
-
-
-        </div>
-
-        <div class="client_box">
-            <div class="client_img">
-                <img src="Image/Client/nerd.jpg">
-            </div>
-
-            <div class="client_content">
-                <h3 class="client_name"  >Jack Killy</h3>
-                <h6 class="client_client">Our Client</h6>
-                <p class="client_desc">Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore</p>
-
-            </div>
-
-
-        </div>
-
     </div>
     <!--  ===================================  V  I  D  E  O  =================================================  -->
     <div class="video">
@@ -1257,6 +1317,94 @@
                 <p class="volunteer_title">Our Volunteer</h1>
             </div>
         </div>
+
+        <div class="volunteer_box_container">
+            <div class="volunteer_box">
+                <div class="volunteer_img">
+                    <img src="Image/Volunteer/t1.jpg">
+                </div>
+                <div class="volunteer_desc">
+                    <h3>Lily Will</h3>
+                    <p>Volunteer</p>
+                </div>
+                <div class="volunteer_icon">
+                    <div class="facebook_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+                    </div>
+                    <div class="twitter_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+                    </div>
+                    <div class="rss_logo">
+                        <img src="Image/icon-rss.png" width="40px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="volunteer_box">
+                <div class="volunteer_img">
+                    <img src="Image/Volunteer/t2.jpg">
+                </div>
+                <div class="volunteer_desc">
+                    <h3>Lily Will</h3>
+                    <p>Volunteer</p>
+                </div>
+                <div class="volunteer_icon">
+                    <div class="facebook_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+                    </div>
+                    <div class="twitter_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+                    </div>
+                    <div class="rss_logo">
+                        <img src="Image/icon-rss.png" width="40px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="volunteer_box">
+                <div class="volunteer_img">
+                    <img src="Image/Volunteer/t3.jpg">
+                </div>
+                <div class="volunteer_desc">
+                    <h3>Lily Will</h3>
+                    <p>Volunteer</p>
+                </div>
+                <div class="volunteer_icon">
+                    <div class="facebook_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+                    </div>
+                    <div class="twitter_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+                    </div>
+                    <div class="rss_logo">
+                        <img src="Image/icon-rss.png" width="40px">
+                    </div>
+                </div>
+
+            </div>
+            <div class="volunteer_box">
+                <div class="volunteer_img">
+                    <img src="Image/Volunteer/t4.jpg">
+                </div>
+                <div class="volunteer_desc">
+                    <h3>Lily Will</h3>
+                    <p>Volunteer</p>
+                </div>
+                <div class="volunteer_icon">
+                    <div class="facebook_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+                    </div>
+                    <div class="twitter_logo">
+                        <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+                    </div>
+                    <div class="rss_logo">
+                        <img src="Image/icon-rss.png" width="40px">
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
     </div>
     <!--  ===================================  B  L  O  G  =============================================  -->
 
@@ -1264,77 +1412,73 @@
 
         <div class="blog_heading">
             <div class="blog_header_left">
-                <p style="color:rgb(163,201,98);font-size:19px;letter-spacing: 1px;"><b>See our Events</b></p>
-               <h1 style="font-size: 33px;letter-spacing: 2px;font-weight: lighter;">Our Blog</h1> 
+                <h3>See our Events</h3>
+                <p class="blog_title">Our Blog</h1> 
             </div>
-        </div>
-        
-        <div class="blog_heading">
+       
             <div class="blog_header_right">
-                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                <p >eiusmod tempor incididunt ut labore</p> 
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore</p> 
             </div>
         </div>
+        <div class="blog_box_container">
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="Image/Blog/butterflyhand.jpg" width="100%">
+                </div>
 
-        <br>
+                <div class="blog_content">
+                    <p>Blog</p>
+                    <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 
-        <div class="blog_box">
-            <div class="blog_image">
-                <img src="Image/Blog/butterflyhand.jpg" width="100%">
-            </div>
+                    </p>
+                </div>
+                <div class="blog_date_tag">
+                    <p>12/4/2019</p>
+                    <p style="padding-left: 170px;"> 3 Tags</p>
 
-            <div class="blog_content">
-                <p>Blog</p>
-                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-
-                </p>
-            </div>
-            <div class="blog_date_tag">
-                <p>12/4/2019</p>
-                <p style="padding-left: 170px;"> 3 Tags</p>
-
-            </div>
-
-        </div>
-        <div class="blog_box">
-            <div class="blog_image">
-                <img src="Image/Blog/smallforest.jpg" width="100%">
-            </div>
-
-            <div class="blog_content">
-                <p>Blog</p>
-                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-
-                </p>
-            </div>
-            <div class="blog_date_tag">
-                <p>12/4/2019</p>
-                <p style="padding-left: 170px;"> 3 Tags</p>
+                </div>
 
             </div>
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="Image/Blog/smallforest.jpg" width="100%">
+                </div>
 
-        </div>
-        <div class="blog_box">
-            <div class="blog_image">
-                <img src="Image/Blog/redflowerlady.jpg" width="100%">
+                <div class="blog_content">
+                    <p>Blog</p>
+                    <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+
+                    </p>
+                </div>
+                <div class="blog_date_tag">
+                    <p>12/4/2019</p>
+                    <p style="padding-left: 170px;"> 3 Tags</p>
+
+                </div>
+
             </div>
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="Image/Blog/redflowerlady.jpg" width="100%">
+                </div>
 
-            <div class="blog_content">
-                <p>Blog</p>
-                <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                <div class="blog_content">
+                    <p>Blog</p>
+                    <h2 style="color: rgb(163,201,98);">Quisque a rhoncus</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 
-                </p>
-            </div>
-            <div class="blog_date_tag">
-                <p>12/4/2019</p>
-                <p style="padding-left: 170px;"> 3 Tags</p>
-
+                    </p>
+                </div>
+                <div class="blog_date_tag">
+                    <p>12/4/2019</p>
+                    <p style="padding-left: 170px;"> 3 Tags</p>
+                </div>
             </div>
         </div>
     </div>
@@ -1365,29 +1509,28 @@
 
 
 <!--  ===================================   F   O   O   T   E   R    =============================================  -->
-    <div class="last">
-        <div class="footer">
-            <p>© 2018 Forest. All Rights Reserved | Design by W3Layouts</p>
-            <div class="icon">
-                <div class="facebook_logo">
-                    <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
-                </div>
-                <div class="twitter_logo">
-                    <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
-                </div>
-                <div class="rss_logo">
-                    <img src="Image/icon-rss.png" width="40px">
-                </div>
-                <div class="vk_logo">
-                    <img src="https://img.icons8.com/ios-glyphs/40/000000/vk-circled.png"/>
-                    </div>
-                </div>
-            <br>
-                <div class="arrow" style="text-align: center;">
-                    <img src="https://img.icons8.com/material-rounded/40/000000/circled-chevron-up.png"/>
-                </div>
+    <footer>
+        <div class="last">
+            <p>© 2018 Forest. All Rights Reserved | Design by <span class="master">  W3Layouts</span></p>
+        </div>
+        <div class="icon">
+            <div class="facebook_logo">
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/facebook-circled--v1.png"/>
+            </div>
+            <div class="twitter_logo">
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/twitter-circled--v1.png"/>
+            </div>
+            <div class="rss_logo">
+                <img src="Image/icon-rss.png" width="40px">
+            </div>
+            <div class="vk_logo">
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/vk-circled.png"/>
+            </div>
+        </div>
+        <div class="arrow" style="text-align: center;">
+            <img src="https://img.icons8.com/material-rounded/40/000000/circled-chevron-up.png"/>
         </div>
 
-    </div>
+    </footer>
 </body>
 </html>
