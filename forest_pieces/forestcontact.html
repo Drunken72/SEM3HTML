@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/733a8eee7b.js" crossorigin="anonymous"></script>
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;    
+        }
+        h3{
+            color: #a3c962;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Playfair Display', 'serif';
+            line-height: 1.2;
+            letter-spacing: 1px;
+        }
+        .contact{
+            
+        }
+
+        .contact_head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 150px 20px;
+        }
+
+        .contact_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .contact_head_left, .contact_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .contact_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1.2px;
+            color : #676662;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .contact_head_right{      
+            line-height: 50px; 
+        }
+
+        .contact_desc{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px 0px;
+        }
+        
+
+        .contact_form, .contact_contact{
+            width: 49%;
+            margin: 5px;
+        }
+
+        .contact_form{
+            padding-left: 13%;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #form input, #form textarea{
+            margin: 7px;
+            padding: 15px;
+            background-color: #efefef;
+            border-width: 0px 0 0px 0px;
+            border-color: white;
+            box-shadow: 0px .5px 1px 0.1px black;
+            font-family:'Open Sans', sans-serif ;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+
+        #form input:focus, #form textarea:focus{
+            outline: 2px solid rgb(116, 212, 212);
+            background-color: white;
+        }
+
+        #form ::placeholder{
+            font-family:'Open Sans', sans-serif ;
+            letter-spacing: 1px;
+            color: #000;
+            opacity: 1;
+        }
+
+        #con_msg{
+            resize: none;
+            height: 9.5rem;
+        }
+
+        #form button{
+            background-color: #a3c962;
+            color: white;
+            border-radius: 25px;
+            padding: 10px;
+            border: none;
+            margin: 5px;
+            font-family: 'Open Sans',sans-serif;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+
+        #form button:hover{
+            transition: 0.5s;
+            background-color: black;
+            color: white;
+        }
+
+        .contact_contact{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact_1,.contact_2,.contact_3{
+            display: flex;
+            margin: 10px 0px;
+            justify-content: flex-start;
+
+        }
+        .contact_1_icon ,.contact_2_icon, .contact_3_icon{
+            padding:35px;
+            font-size: 30px;
+            margin-right: 30px;
+        }
+        .contact_3_icon{
+            font-size: 40px;
+        }
+
+        .contact_1_desc,.contact_2_desc,.contact_3_desc p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            letter-spacing: 1px;
+            font-family:'Open Sans', sans-serif;
+        }
+        .contact_1_desc h3, .contact_2_desc h3, .contact_3_desc h3{
+            font-size: 27px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contact" id="contact">
+
+        <div class="contact_head">
+            <div class="contact_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore</p>
+            </div>
+
+            <div class="contact_head_right">
+                <h3>Get Touch in</h3>
+                <p class="contact_title">Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="contact_desc">
+            <div class="contact_form">
+                <form id="form">
+                    <input type="text" placeholder="Name" id="con_name" required >
+                    <input type="email" placeholder="Email" id="con_email" required  >
+                    <input type="text" placeholder="Phone" id="con_phone" required >
+                    <textarea type="text" placeholder="Message" id="con_msg" required ></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact_contact">
+                <div class="contact_1">
+                    <div class="contact_1_icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="contact_1_desc">
+                        <h3>Address</h3>
+                        <p>South Brisbane,Old 4101 Australia </p>
+                    </div>
+                </div>
+                <div class="contact_2">
+                    <div class="contact_2_icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact_2_desc">
+                        <h3>Phone</h3>
+                        <p>+ 1 (234) 567 8901</p>
+                        <p>+ 1 (000) 555 9901</p>
+                    </div>
+                </div>
+                <div class="contact_3">
+                    <div class="contact_3_icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact_3_desc">
+                        <h3>Email</h3>
+                        <p>info@example.com</p>
+                        <p>info2@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
