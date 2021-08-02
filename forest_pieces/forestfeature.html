@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h3{
+            color: #a3c962;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Playfair Display', 'serif';
+            line-height: 1.2;
+            letter-spacing: 1px;
+        }
+
+        .price_head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 150px 0px;
+        }
+
+        .price_title{
+            font-size: 36px;
+            letter-spacing: 2px; 
+            font-weight: lighter;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;     
+        }
+        .price_head_left, .price_head_right{
+            width: 45%;
+            padding: 15px;
+        }
+
+        .price_head_left{
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 1.2px;
+            color : #676662;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        .price_head_right{
+            line-height: 50px;
+        }
+
+        .price_desc{
+            display: flex;
+            padding: 10px 200px;
+          
+        }
+
+        .price_img, .price_table{
+            margin:30px;
+        }
+
+        .price_img{
+            padding-left: 0px;
+        }
+
+        .price_table{
+            flex-direction: column;
+        }
+
+        .price_table1, .price_table2, .price_table3{
+            padding:20px;
+            border: 1px solid whitesmoke ;
+            display: flex;
+            flex-direction: row;
+            margin-bottom:35px;
+            border-radius: 10px;
+            box-shadow: -3px 7px 39px -5px rgb(0, 0, 0);
+            background-color: #f7f7f7;
+        }
+
+        
+
+        .price_table2{
+            margin-left: 30px;
+        }
+
+        .price_content{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 10px;
+
+        }
+
+        .price_icon{
+            padding:30px;
+            font-size: 35px;
+            margin:0px 50px
+        }
+
+        #icon_cloud{
+            margin: 0 35px
+        }
+
+
+        .price_content h3{
+            margin-bottom: 10px;
+            font-size: 22px ;
+        }
+        .price_content p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            letter-spacing: 1px;
+            font-family:'Open Sans', sans-serif;
+        }
+
+    </style>
+    <script src="https://kit.fontawesome.com/733a8eee7b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="price">
+        <div class="price_head">
+            <div class="price_head_left">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+            <div class="price_head_right">
+                <h3>Our hard work</h3>
+                <p class="price_title">Our Features</p>
+            </div>
+        </div>
+        <div class="price_desc">
+            <div class="price_img">
+                <img src="forestfeatureimg/ab2.jpg">
+            </div>
+            <div class="price_table">
+                <div class="price_table1">
+                    <div class="price_icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="price_content">
+                        <h3>Planting Trees and Plants</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+                <div class="price_table2">
+                    <div class="price_icon" id="icon_cloud">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="price_content">
+                        <h3>Change Climate BIo-Epoxy</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+                <div class="price_table3">
+                    <div class="price_icon">
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                    </div>
+                    <div class="price_content">
+                        <h3>Reduce Pollution For life</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
